@@ -74,13 +74,13 @@ variable "redis_clustering_policy" {
 }
 
 variable "redis_eviction_policy" {
-  description = "Eviction policy — AllKeysLRU is ideal for chat history"
+  description = "Eviction policy 
   type        = string
   default     = "NoEviction"
 }
 
 variable "redis_rdb_backup_frequency" {
-  description = "RDB snapshot frequency in seconds (3600=1h, 21600=6h, 43200=12h)"
+  description = "RDB snapshot frequency in seconds (3600=1h)"
   type        = string
   default     = "3600"
 }
